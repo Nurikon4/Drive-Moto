@@ -51,7 +51,7 @@ $(function () {
                     arrows: false,
                     dots: true
                 }
-            }, 
+            },
             {
                 breakpoint: 590,
                 settings: {
@@ -102,7 +102,7 @@ $(function () {
         $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
     })
 
-    $('.footer__top-title').on('click', function(){
+    $('.footer__top-title').on('click', function () {
         $(this).next().slideToggle()
     })
 
@@ -110,7 +110,21 @@ $(function () {
         $(this).toggleClass('footer__topdrop--active')
     })
 
-    $('.aside__btn').on('click', function(){
+    $('.aside__btn').on('click', function () {
         $(this).next().slideToggle()
     })
+});
+
+// Registr & Login form
+
+const sign_in_btn = document.querySelector("#sign-in-btn");
+const sign_up_btn = document.querySelector("#sign-up-btn");
+const container = document.querySelector(".container-forms");
+
+sign_up_btn.addEventListener("click", () => {
+    container.classList.add("sign-up-mode");
+});
+
+sign_in_btn.addEventListener("click", () => {
+    container.classList.remove("sign-up-mode");
 });

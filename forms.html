@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Авторизация & Регистрация</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <nav class="menu">
+                        <button class="menu__btn">
+                            <div class="menu__btn-line"></div>
+                            <div class="menu__btn-line"></div>
+                            <div class="menu__btn-line"></div>
+                        </button>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="index.html">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="payment.html">Доставка и оплата</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="contact.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="logo" href="index.html">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <div class="header__box">
+                        <p class="header__adress">
+                            Алматы, ул. Манаса 34А
+                        </p>
+                        <ul class="user__list">
+                            <li class="user__list-item">
+                                <a class="user__list-link" href="#">
+                                    <img src="images/heart.svg" alt="heart">
+                                </a>
+                            </li>
+                            <li class="user__list-item">
+                                <a class="user__list-link" href="#">
+                                    <img src="images/person.svg" alt="person">
+                                </a>
+                            </li>
+                            <li class="user__list-item">
+                                <a class="user__list-link basket" href="#">
+                                    <img src="images/basket.svg" alt="basket">
+                                    <p class="basket__num">1</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="menu-mobile__list">
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="catalog.html">
+                    <img class="menu-mobile__img" src="images/person.svg" alt="icon">
+                    <p>Войти</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#">
+                    <img class="menu-mobile__img" src="images/person.svg" alt="icon">
+                    <p>Регистрация</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#">
+                    <img class="menu-mobile__img" src="images/heart-product.svg" alt="icon">
+                    <p>Избранное</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#">
+                    <img class="menu-mobile__img" src="images/basket.svg" alt="icon">
+                    <p>Корзина</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#">
+                    <img class="menu-mobile__img" src="images/house.svg" alt="icon">
+                    <p>Магазины</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#">
+                    <img class="menu-mobile__img" src="images/procent.svg" alt="icon">
+                    <p>Акции</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#">
+                    <img class="menu-mobile__img" src="images/box.svg" alt="icon">
+                    <p>Доставка и оплата</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="catalog.html">
+                    <p>Квадроциклы</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="catalog.html">
+                    <p>Катера</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="catalog.html">
+                    <p>Гидроциклы</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="catalog.html">
+                    <p>Лодки</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="catalog.html">
+                    <p>Вездеходы</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="catalog.html">
+                    <p>Снегоходы</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="catalog.html">
+                    <p>Двигатели</p>
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="catalog.html">
+                    <p>Запчасти</p>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="forms">
+            <div class="container-forms">
+                <div class="forms-container">
+                    <div class="signin-signup">
+                        <form action="#" class="sign-in-form">
+                            <h2 class="title">Авторизация</h2>
+                            <div class="input-field">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Логин" />
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Пароль" />
+                            </div>
+                            <input type="submit" value="Войти" class="btn solid" />  
+                        </form>
+                        <form action="#" class="sign-up-form">
+                            <h2 class="title">Регистрация</h2>
+                            <div class="input-field">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Логин" />
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Почта" />
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Пароль" />
+                            </div>
+                            <input type="submit" class="btn" value="Зарегистрироваться" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="panels-container">
+                    <div class="panel left-panel">
+                        <div class="content">
+                            <h3>Впервые здесь?</h3>
+                            <p>
+                                Не беда, ты можешь пройти быструю регистрацию, и делать покупки на нашем сайте :)
+                            </p>
+                            <button class="btn transparent" id="sign-up-btn">
+                                Зарегистрироваться
+                            </button>
+                        </div>
+                        <img src="images/log.svg" class="image" alt="" />
+                    </div>
+                    <div class="panel right-panel">
+                        <div class="content">
+                            <h3>Уже зарегистрирован?</h3>
+                            <p>
+                                Тогда быстрее нажимай войти, что бы быть снова с нами
+                            </p>
+                            <button class="btn transparent" id="sign-in-btn">
+                                Войти
+                            </button>
+                        </div>
+                        <img src="images/register.svg" class="image" alt="" />
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-inner">
+                    <div class="footer__top-item footer__top-newslatter">
+                        <h6 class="footer__top-title">
+                            Подпишитесь на нашу рассылку
+                            и узнавайте о акциях быстрее
+                        </h6>
+                        <form class="footer-form">
+                            <input class="footer-form__input" type="text" placeholder="Введите ваш e-mail:">
+                            <button class="footer-form__btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="footer__top-item footer__top-itemdrop">
+                        <h6 class="footer__top-title footer__topdrop">
+                            Информация
+                        </h6>
+                        <ul class="footer-list">
+                            <li class="footer__list-item"><a href="contact.html">О компании</a></li>
+                            <li class="footer__list-item"><a href="contact.html">Контакты</a></li>
+                            <li class="footer__list-item"><a href="#">Акции</a></li>
+                            <li class="footer__list-item"><a href="#">Магазины</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-item">
+                        <h6 class="footer__top-title footer__topdrop">
+                            Интернет-магазин
+                        </h6>
+                        <ul class="footer-list">
+                            <li class="footer__list-item"><a href="payment.html">Доставка и самовывоз</a></li>
+                            <li class="footer__list-item"><a href="payment.html">Оплата</a></li>
+                            <li class="footer__list-item"><a href="#">Возврат-обмен</a></li>
+                            <li class="footer__list-item"><a href="#">Новости</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-item footer__top-social">
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="https://www.instagram.com/iitu_kz/" target="_blank">
+                                    <img src="images/instagram.svg" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="https://vk.com/iitukz" target="_blank">
+                                    <img src="images/vkontakte.svg" alt="vkontakte">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="https://www.facebook.com/universityAlmaty" target="_blank">
+                                    <img src="images/facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="https://www.youtube.com/user/IITUAlmaty" target="_blank">
+                                    <img src="images/youtube.svg" alt="youtube">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a class="footer__botom-link" href="#">Договор оферты</a>
+                <a class="footer__botom-link" href="#">Политика обработки персональных данных</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
