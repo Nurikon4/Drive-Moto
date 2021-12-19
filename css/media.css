@@ -26,6 +26,13 @@
     .catalog__inner-list{
         justify-content: space-around;
     }
+    .contact__map{
+        display: flex;
+        justify-content: center;
+    }
+    .contact__map iframe{
+        width: 1085px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -43,6 +50,9 @@
     }
     .card__label-search::after {
         right: 18px;
+    }
+    .contact__map iframe{
+        width: 952px;
     }
 }
 
@@ -132,7 +142,39 @@
     }
     .breadcrumbs{
         margin-top: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    .payment__maintitle {
+        font-size: 19px;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+    .payment__title {
+        margin-bottom: 15px;
+        font-size: 17px;
+    }
+    .payment__shipping-item,
+    .payment__shipping-text{
+        font-size: 15px;
+    }
+    .contact__maintitle{
+        font-size: 19px;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+    .contact__img{
+        width: 18px;
+        height: auto;
+        margin: 2px 13px 0 3px;
+    }
+    .contact__title{
+        font-size: 16px;
+    }
+    .contact__text{
+        font-size: 15px;
+    }
+    .contact__map iframe{
+        width: 768px;
     }
 }
 
@@ -170,6 +212,16 @@
     }
     .card__label-search::after {
         display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .contact__map iframe{
+        width: 640px;
+        height: 400px;
+    }
+    .leaflet-pane leaflet-map-pane{
+        transform: translate3d(-252px, -113px, 0px);
     }
 }
 
@@ -242,6 +294,14 @@
     }
     .product-card__img{
         width: 100%;
+    }
+    .payment__maintitle {
+        font-size: 17px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .contact__map iframe{
+        width: 540px;
     }
 }
 
@@ -317,6 +377,51 @@
     .footer__topdrop{
         pointer-events: auto;
     }
+    .payment__maintitle {
+        font-size: 19px;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+    .payment__title {
+        margin-bottom: 15px;
+        font-size: 17px;
+    }
+    .payment__shipping-item,
+    .payment__shipping-text{
+        font-size: 15px;
+    }
+    .payment__maintitle {
+        font-size: 16px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .payment__title {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .payment__shipping-item,
+    .payment__shipping-text{
+        font-size: 13px;
+    }
+    .contact__maintitle{
+        font-size: 16px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .contact__img{
+        width: 16px;
+        height: auto;
+        margin: 2px 13px 0 3px;
+    }
+    .contact__title{
+        font-size: 15px;
+    }
+    .contact__text{
+        font-size: 14px;
+    }
+    .contact__map iframe{
+        width: 440px;
+    }
 }
 
 @media (max-width: 440px) {
@@ -328,5 +433,8 @@
     }
     .pagination-list__item{
         margin: 0;
+    }
+    .contact__map iframe{
+        width: 320px;
     }
 }
