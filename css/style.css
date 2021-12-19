@@ -1869,12 +1869,6 @@ form.sign-in-form {
     z-index: 6;
 }
 
-.image {
-    width: 100%;
-    transition: transform 1.1s ease-in-out;
-    transition-delay: 0.4s;
-}
-
 .panel {
     display: flex;
     flex-direction: column;
@@ -1926,7 +1920,36 @@ form.sign-in-form {
     transform: translateX(800px);
 }
 
+.image {
+    width: 100%;
+    transition: transform 1.1s ease-in-out;
+    transition-delay: 0.4s;
+}
+
+.image-log:hover {
+    animation: log 10s linear infinite alternate;
+}
+
+.image-register:hover {
+    animation: register  1s ease-in-out infinite alternate;
+}
+
 /* animation */
+
+@keyframes log {
+    30% {
+        transform: translate(0%, -85%);
+    }
+}
+
+@keyframes register {
+    0% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(-3deg);
+    }
+}
 
 .container-forms.sign-up-mode:before {
     transform: translate(100%, -50%);
@@ -1964,7 +1987,3 @@ form.sign-in-form {
 .container-forms.sign-up-mode .right-panel {
     pointer-events: all;
 }
-
-
-
-
