@@ -1755,9 +1755,9 @@ button.catalog__filter-btnline {
 
 .signin-signup {
     position: absolute;
-    top: 50%;
+    top: 30%;
     transform: translate(-50%, -50%);
-    left: 75%;
+    left: 70%;
     width: 50%;
     transition: 1s 0.7s ease-in-out;
     display: grid;
@@ -1796,7 +1796,7 @@ form.sign-in-form {
     max-width: 380px;
     width: 100%;
     background-color: #f0f0f0;
-    margin: 10px 0;
+    margin: 13px 0;
     height: 55px;
     border-radius: 55px;
     display: grid;
@@ -1930,6 +1930,7 @@ form.sign-in-form {
     animation: log 10s linear infinite alternate;
 }
 
+
 .image-register:hover {
     animation: register  1s ease-in-out infinite alternate;
 }
@@ -1986,4 +1987,18 @@ form.sign-in-form {
 
 .container-forms.sign-up-mode .right-panel {
     pointer-events: all;
+}
+
+/* Validation Regex*/
+
+.form__error{
+    width: 500px;
+    color: red;
+	font-size: .78rem;
+	display: block;
+	display: none;
+}
+
+input:invalid:not(:placeholder-shown) + .form__error {
+	display: block;
 }

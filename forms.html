@@ -74,13 +74,13 @@
         </div>
         <ul class="menu-mobile__list">
             <li class="menu-mobile__item">
-                <a class="menu-mobile__link" href="catalog.html">
+                <a class="menu-mobile__link" href="forms.html">
                     <img class="menu-mobile__img" src="images/person.svg" alt="icon">
                     <p>Войти</p>
                 </a>
             </li>
             <li class="menu-mobile__item">
-                <a class="menu-mobile__link" href="#">
+                <a class="menu-mobile__link" href="forms.html">
                     <img class="menu-mobile__img" src="images/person.svg" alt="icon">
                     <p>Регистрация</p>
                 </a>
@@ -104,15 +104,15 @@
                 </a>
             </li>
             <li class="menu-mobile__item">
-                <a class="menu-mobile__link" href="#">
-                    <img class="menu-mobile__img" src="images/procent.svg" alt="icon">
-                    <p>Акции</p>
+                <a class="menu-mobile__link" href="payment.html">
+                    <img class="menu-mobile__img" src="images/box.svg" alt="icon">
+                    <p>Доставка и оплата</p>
                 </a>
             </li>
             <li class="menu-mobile__item">
-                <a class="menu-mobile__link" href="#">
+                <a class="menu-mobile__link" href="contact.html">
                     <img class="menu-mobile__img" src="images/box.svg" alt="icon">
-                    <p>Доставка и оплата</p>
+                    <p>Контакты</p>
                 </a>
             </li>
             <li class="menu-mobile__item">
@@ -156,69 +156,76 @@
                 </a>
             </li>
         </ul>
+
     </header>
 
     <section class="forms">
-            <div class="container-forms">
-                <div class="forms-container">
-                    <div class="signin-signup">
-                        <form action="#" class="sign-in-form">
-                            <h2 class="title">Авторизация</h2>
-                            <div class="input-field">
-                                <i class="fas fa-user"></i>
-                                <input type="text" placeholder="Логин" />
-                            </div>
-                            <div class="input-field">
-                                <i class="fas fa-lock"></i>
-                                <input type="password" placeholder="Пароль" />
-                            </div>
-                            <input type="submit" value="Войти" class="btn solid" />  
-                        </form>
-                        <form action="#" class="sign-up-form">
-                            <h2 class="title">Регистрация</h2>
-                            <div class="input-field">
-                                <i class="fas fa-user"></i>
-                                <input type="text" placeholder="Логин" />
-                            </div>
-                            <div class="input-field">
-                                <i class="fas fa-envelope"></i>
-                                <input type="email" placeholder="Почта" />
-                            </div>
-                            <div class="input-field">
-                                <i class="fas fa-lock"></i>
-                                <input type="password" placeholder="Пароль" />
-                            </div>
-                            <input type="submit" class="btn" value="Зарегистрироваться" />
-                        </form>
-                    </div>
-                </div>
+        <div class="container-forms">
+            <div class="forms-container">
+                <div class="signin-signup">
 
-                <div class="panels-container">
-                    <div class="panel left-panel">
-                        <div class="content">
-                            <h3>Впервые здесь?</h3>
-                            <p>
-                                Не беда, ты можешь пройти быструю регистрацию, и делать покупки на нашем сайте :)
-                            </p>
-                            <button class="btn transparent" id="sign-up-btn">
-                                Зарегистрироваться
-                            </button>
+                    <form action="#" class="sign-in-form">
+                        <h2 class="title">Авторизация</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Логин" pattern="^(?=.*[A-Za-z0-9]$)[A-Za-z][A-Za-z\d.-]{0,19}" required/>
+                            <span class="form__error">Это поле должно содержать только латинские буквы и цифры</span>
                         </div>
-                        <img src="images/log.svg" class="image image-log" alt="" />
-                    </div>
-                    <div class="panel right-panel">
-                        <div class="content">
-                            <h3>Уже зарегистрирован?</h3>
-                            <p>
-                                Тогда быстрее нажимай войти, что бы быть снова с нами
-                            </p>
-                            <button class="btn transparent" id="sign-in-btn">
-                                Войти
-                            </button>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Пароль" pattern="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,15})$" required/>
+                            <span class="form__error">Первая бувка заглваная, длина пароля от 8 до 15. Латинские бувы и цифры</span>
                         </div>
-                        <img src="images/register.svg" class="image image-register" alt="" />
-                    </div>
+                        <button class="btn solid" type="submit">Войти</button>
+                    </form>
+                    <form action="#" class="sign-up-form">
+                        <h2 class="title">Регистрация</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Логин" pattern="^(?=.*[A-Za-z0-9]$)[A-Za-z][A-Za-z\d.-]{0,19}"/ required>
+                            <span class="form__error">Это поле должно содержать только латинские буквы и цифры</span>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="Почта" required/>
+                            <span class="form__error">Это поле должно содержать E-Mail в формате example@site.com</span>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Пароль" pattern="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,15})$" required/>
+                            <span class="form__error">Первая бувка заглваная, длина пароля от 8 до 15. Латинские бувы и цифры</span>
+                        </div>
+                        <button type="submit" class="btn">Зарегистрироваться</button>
+                    </form>
                 </div>
+            </div>
+
+            <div class="panels-container">
+                <div class="panel left-panel">
+                    <div class="content">
+                        <h3>Впервые здесь?</h3>
+                        <p>
+                            Не беда, ты можешь пройти быструю регистрацию, и делать покупки на нашем сайте :)
+                        </p>
+                        <button class="btn transparent" id="sign-up-btn">
+                            Зарегистрироваться
+                        </button>
+                    </div>
+                    <img src="images/log.svg" class="image image-log" alt="" />
+                </div>
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>Уже зарегистрирован(а)?</h3>
+                        <p>
+                            Тогда быстрее нажимай войти, что бы быть снова с нами
+                        </p>
+                        <button class="btn transparent" id="sign-in-btn">
+                            Войти
+                        </button>
+                    </div>
+                    <img src="images/register.svg" class="image image-register" alt="" />
+                </div>
+            </div>
         </div>
     </section>
 
@@ -291,6 +298,7 @@
         </div>
     </footer>
 
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/ion.rangeSlider.min.js"></script>
