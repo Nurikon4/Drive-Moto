@@ -1,3 +1,4 @@
+
 $(function () {
     $('.banner__slider').slick({
         dots: true,
@@ -115,6 +116,7 @@ $(function () {
     })
 });
 
+
 // Registr & Login form
 
 const sign_in_btn = document.querySelector("#sign-in-btn");
@@ -128,3 +130,33 @@ sign_up_btn.addEventListener("click", () => {
 sign_in_btn.addEventListener("click", () => {
     container.classList.remove("sign-up-mode");
 });
+
+// Author
+
+let nameS = document.getElementById('name');
+let pw = document.getElementById('pw');
+
+function store() {
+    localStorage.setItem('name', nameS.value);
+    localStorage.setItem('pw', pw.value);
+}
+
+
+function check() {
+
+    let storedName = localStorage.getItem('name');
+    let storedPw = localStorage.getItem('pw');
+
+    let userName = document.getElementById('userName');
+    let userPw = document.getElementById('userPw');
+
+    let userList = document.querySelector('.user__list');
+
+    if (userName.value == storedName && userPw.value == storedPw) {
+        setTimeout(function () { document.location.href = "index.html"; }, 500);
+        alert('Вы успешно авторизовались!');
+        
+    } else {
+        alert('Неправильный логин или пароль!');
+    }
+}
